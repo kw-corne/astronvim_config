@@ -17,4 +17,7 @@ return {
   -- Language Packs
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.rust" },
+
+  -- latex
+  { import = "astrocommunity.markdown-and-latex.vimtex" },
 }
