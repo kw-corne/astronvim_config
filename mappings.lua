@@ -35,9 +35,14 @@ return {
       desc = "Previous buffer",
     },
     -- Move current line / block with Alt-j/k ala vscode.
-    ["<A-j>"] = "<Esc>:m .+1<CR>",
+    -- ["<A-j>"] = "<Esc>:m .+1<CR>",
     -- Move current line / block with Alt-j/k ala vscode.
-    ["<A-k>"] = "<Esc>:m .-2<CR>",
+    -- ["<A-k>"] = "<Esc>:m .-2<CR>",
+    -- tmux vim
+    -- ["<C-h>"] = { "<cmd>TmuxNavigateLeft<CR>", desc = "window left" },
+    -- ["<C-l>"] = { "<cmd>TmuxNavigateRight<CR>", desc = "window right" },
+    -- ["<C-j>"] = { "<cmd>TmuxNavigateDown<CR>", desc = "window down" },
+    -- ["<C-k>"] = { "<cmd>TmuxNavigateUp<CR>", desc = "window up" },
   },
   t = {
     -- setting a mapping to false will disable it

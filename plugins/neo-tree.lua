@@ -6,8 +6,8 @@ return {
       statusline = false,
       sources = {
         { source = "filesystem" },
-        { source = "buffers" },
-        { source = "git_status" },
+        -- { source = "buffers" },
+        -- { source = "git_status" },
       },
     }
     return opts

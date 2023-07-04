@@ -13,7 +13,7 @@ return {
     "jay-babu/mason-null-ls.nvim",
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
-      ensure_installed = { "prettier", "stylua", "isort", "flake8", "black" },
+      ensure_installed = { "stylua", "flake8", "isort", "black" },
     },
   },
   {
