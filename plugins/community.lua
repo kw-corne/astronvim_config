@@ -13,6 +13,7 @@ return {
   -- { import = "astrocommunity.colorscheme.tokyonight-nvim" },
   -- { import = "astrocommunity.colorscheme.nightfox-nvim" },
   -- { import = "astrocommunity.colorscheme.onigiri-nvim" },
+  -- { import = "astrocommunity.colorscheme.dracula-nvim" },
   -- { import = "astrocommunity.colorscheme.iceberg-vim" },
   -- { import = "astrocommunity.colorscheme.oxocarbon-nvim" },
   -- { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
@@ -28,21 +29,22 @@ return {
   -- Language Packs
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.rust" },
-  { import = "astrocommunity.pack.markdown" },
 
   -- Diagnostics
   { import = "astrocommunity.diagnostics.trouble-nvim" },
 
+  -- Completion
+  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+
   -- Note-taking
-  -- { import = "astrocommunity.note-taking.neorg" },
 
   -- Motions
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
 
   -- Editing support
-  { import = "astrocommunity.editing-support.zen-mode-nvim" },
   { import = "astrocommunity.editing-support.vim-move" },
+  { import = "astrocommunity.editing-support.zen-mode-nvim" },
 
   -- Markdown-and-latex
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },

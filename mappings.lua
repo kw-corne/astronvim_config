@@ -23,6 +23,7 @@ return {
     -- quick save
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
     ["<Enter>"] = { "o<ESC>", desc = "New line" },
+    ["<S-Enter>"] = { "O<ESC>", desc = "New line above" },
     -- Buffer nav
     ["]b"] = false,
     ["[b"] = false,
