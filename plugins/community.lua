@@ -26,9 +26,13 @@ return {
   -- { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
   -- { import = "astrocommunity.colorscheme.github-nvim-theme" },
 
+  -- { import = "astrocommunity.bars-and-lines.bufferline-nvim" },
   -- Language Packs
-  { import = "astrocommunity.pack.python" },
+  -- { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.pack.java" },
+  { import = "astrocommunity.pack.go" },
 
   -- Diagnostics
   { import = "astrocommunity.diagnostics.trouble-nvim" },

@@ -3,7 +3,7 @@ return {
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",
     event = "User AstroFile",
-    opts = { suggestion = { auto_trigger = true, debounce = 150 } },
+    opts = { suggestion = { auto_trigger = false, debounce = 150 } },
   },
   {
     "hrsh7th/nvim-cmp",
