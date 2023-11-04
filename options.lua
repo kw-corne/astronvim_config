@@ -10,7 +10,7 @@ return {
     wrap = false, -- sets vim.opt.wrap
     colorcolumn = {},
     background = "dark",
-    laststatus = 0,
+    laststatus = 3,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader

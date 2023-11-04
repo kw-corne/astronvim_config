@@ -1,16 +1,7 @@
 return {
-  -- You can also add new plugins here as well:
-  -- Add plugins, the lazy syntax
-  -- "andweeb/presence.nvim",
-  -- {
-  --   "ray-x/lsp_signature.nvim",
-  --   event = "BufRead",
-  --   config = function() require("lsp_signature").setup() end,
-  -- },
   {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
-    -- config = function() require("todo-comments").setup {} end,
     opts = {},
     event = { "User AstroFile" },
     cmd = { "TodoQuickFix" },
@@ -18,13 +9,72 @@ return {
       { "<leader>T", "<cmd>TodoTelescope<cr>", desc = "Open TODOs in Telescope" },
     },
   },
-  { "xiyaowong/transparent.nvim", lazy = false },
+  -- {
+  --   "sainnhe/gruvbox-material",
+  --   init = function()
+  --     vim.g.gruvbox_material_background = "hard"
+  --     vim.g.gruvbox_material_foreground = "mix"
+  --     vim.g.gruvbox_material_dim_inactive_windows = 0
+  --   end,
+  -- },
+  --
+
+  {
+    "xiyaowong/transparent.nvim",
+    lazy = false,
+    opts = {
+      -- table: default groups
+      groups = {
+        "Normal",
+        "NormalNC",
+        "Comment",
+        "Constant",
+        "Special",
+        "Identifier",
+        "Statement",
+        "PreProc",
+        "Type",
+        "Underlined",
+        "Todo",
+        "String",
+        "Function",
+        "Conditional",
+        "Repeat",
+        "Operator",
+        "Structure",
+        "LineNr",
+        "NonText",
+        "SignColumn",
+        "CursorLineNr",
+        "CursorLine",
+        "EndOfBuffer",
+        "Winbar",
+        "WinbarNC",
+      },
+      -- table: additional groups that should be cleared
+      extra_groups = {
+        "NormalFloat",
+        "NvimTreeNormal",
+        "NeoTreeNormal",
+        "NeoTreeFloatBorder",
+        "NeoTreeNormalNC",
+        "BufferlineBackground",
+        "BufferlineFill",
+      },
+      -- table: groups you don't want to clear
+      exclude_groups = {},
+    },
+    keys = {
+      { "<leader>u" .. "T", "<cmd>TransparentToggle<CR>", desc = "Toggle transparency" },
+    },
+  },
+
   {
     "navarasu/onedark.nvim",
     lazy = false,
     init = function()
       require("onedark").setup {
-        style = "deep",
+        -- style = "darker",
         highlights = {
           ["@comment"] = { fg = "$light_grey" },
         },
@@ -32,19 +82,6 @@ return {
     end,
   },
   {
-    "Mofiqul/dracula.nvim",
-    lazy = false,
-    priority = 1000,
-    init = function()
-      require("dracula").setup {
-        colors = {
-          comment = "#a4afd3",
-          nontext = "#a4afd3",
-          visual = "#868a93",
-          selection = "#5b5e6f",
-        },
-        italic_comment = true,
-      }
-    end,
+    dir = "~/projects/nvim/adrenaline.nvim",
   },
 }

@@ -17,10 +17,10 @@ return {
     },
   },
   -- Set colorscheme to use
-  colorscheme = "onedark",
+  colorscheme = "catppuccin-frappe",
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
-    virtual_text = false,
+    virtual_text = true,
     underline = true,
   },
   lsp = {

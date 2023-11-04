@@ -5,13 +5,13 @@ return {
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
   --
   -- Colorschemes
-  -- { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.colorscheme.everforest" },
   -- { import = "astrocommunity.colorscheme.gruvbox-nvim" },
   -- { import = "astrocommunity.colorscheme.kanagawa-nvim" },
   -- { import = "astrocommunity.colorscheme.rose-pine" },
   -- { import = "astrocommunity.colorscheme.tokyonight-nvim" },
-  -- { import = "astrocommunity.colorscheme.nightfox-nvim" },
+  { import = "astrocommunity.colorscheme.nightfox-nvim" },
   -- { import = "astrocommunity.colorscheme.onigiri-nvim" },
   -- { import = "astrocommunity.colorscheme.dracula-nvim" },
   -- { import = "astrocommunity.colorscheme.iceberg-vim" },
@@ -25,6 +25,10 @@ return {
   -- { import = "astrocommunity.colorscheme.mini-base16" },
   -- { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
   -- { import = "astrocommunity.colorscheme.github-nvim-theme" },
+  -- { import = "astrocommunity.colorscheme.nordic-nvim" },
+
+  -- Color
+  { import = "astrocommunity.color.transparent-nvim" },
 
   -- { import = "astrocommunity.bars-and-lines.bufferline-nvim" },
   -- Language Packs
@@ -33,6 +37,9 @@ return {
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.svelte" },
+  { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.html-css" },
 
   -- Diagnostics
   { import = "astrocommunity.diagnostics.trouble-nvim" },
@@ -48,7 +55,7 @@ return {
 
   -- Editing support
   { import = "astrocommunity.editing-support.vim-move" },
-  { import = "astrocommunity.editing-support.zen-mode-nvim" },
+  -- { import = "astrocommunity.editing-support.zen-mode-nvim" },
 
   -- Markdown-and-latex
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
