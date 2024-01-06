@@ -8,7 +8,7 @@ return {
     signcolumn = "yes", -- sets vim.opt.signcolumn to auto
     foldcolumn = "0",
     wrap = false, -- sets vim.opt.wrap
-    colorcolumn = {},
+    colorcolumn = { 80 },
     background = "dark",
     laststatus = 3,
   },

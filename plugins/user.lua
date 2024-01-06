@@ -18,7 +18,38 @@ return {
   --   end,
   -- },
   --
-
+  -- {
+  --   "EdenEast/nightfox.nvim",
+  --   opts = {
+  --     options = {
+  --       transparent = true,
+  --       module_default = false,
+  --       modules = {
+  --         aerial = true,
+  --         cmp = true,
+  --         ["dap-ui"] = true,
+  --         dashboard = true,
+  --         diagnostic = true,
+  --         gitsigns = true,
+  --         native_lsp = true,
+  --         neotree = true,
+  --         notify = true,
+  --         symbol_outline = true,
+  --         telescope = true,
+  --         treesitter = true,
+  --         whichkey = true,
+  --       },
+  --     },
+  --     groups = { all = { NormalFloat = { link = "Normal" } } },
+  --   },
+  -- },
+  {
+    "jghauser/kitty-runner.nvim",
+    init = function()
+      local opts = require("kitty-runner.config").window_config
+      require("kitty-runner").setup(opts)
+    end,
+  },
   {
     "xiyaowong/transparent.nvim",
     lazy = false,
@@ -68,20 +99,30 @@ return {
       { "<leader>u" .. "T", "<cmd>TransparentToggle<CR>", desc = "Toggle transparency" },
     },
   },
-
-  {
-    "navarasu/onedark.nvim",
-    lazy = false,
-    init = function()
-      require("onedark").setup {
-        -- style = "darker",
-        highlights = {
-          ["@comment"] = { fg = "$light_grey" },
-        },
-      }
-    end,
-  },
-  {
-    dir = "~/projects/nvim/adrenaline.nvim",
-  },
+  -- {
+  --   "shortcuts/no-neck-pain.nvim",
+  --   version = "*",
+  --   init = function()
+  --     require("no-neck-pain").setup {
+  --       mappings = {
+  --         enabled = true,
+  --       },
+  --       buffers = {
+  --         setNames = true,
+  --       },
+  --     }
+  --   end,
+  -- },
+  -- {
+  --   "navarasu/onedark.nvim",
+  --   lazy = false,
+  --   init = function()
+  --     require("onedark").setup {
+  --       -- style = "darker",
+  --       highlights = {
+  --         ["@comment"] = { fg = "$light_grey" },
+  --       },
+  --     }
+  --   end,
+  -- },
 }

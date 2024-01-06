@@ -11,7 +11,7 @@ return {
   -- { import = "astrocommunity.colorscheme.kanagawa-nvim" },
   -- { import = "astrocommunity.colorscheme.rose-pine" },
   -- { import = "astrocommunity.colorscheme.tokyonight-nvim" },
-  { import = "astrocommunity.colorscheme.nightfox-nvim" },
+  -- { import = "astrocommunity.colorscheme.nightfox-nvim" },
   -- { import = "astrocommunity.colorscheme.onigiri-nvim" },
   -- { import = "astrocommunity.colorscheme.dracula-nvim" },
   -- { import = "astrocommunity.colorscheme.iceberg-vim" },
@@ -36,10 +36,12 @@ return {
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.java" },
-  { import = "astrocommunity.pack.go" },
+  -- { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.zig" },
 
   -- Diagnostics
   { import = "astrocommunity.diagnostics.trouble-nvim" },
@@ -55,7 +57,7 @@ return {
 
   -- Editing support
   { import = "astrocommunity.editing-support.vim-move" },
-  -- { import = "astrocommunity.editing-support.zen-mode-nvim" },
+  { import = "astrocommunity.editing-support.zen-mode-nvim" },
 
   -- Markdown-and-latex
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
