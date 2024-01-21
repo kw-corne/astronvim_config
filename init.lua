@@ -17,7 +17,7 @@ return {
     },
   },
   -- Set colorscheme to use
-  colorscheme = "catppuccin-frappe",
+  colorscheme = "gruvbox-material",
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
@@ -66,6 +66,7 @@ return {
     require("notify").setup {
       background_colour = "#000000",
     }
+    if vim.g.neovide then vim.o.guifont = "JetBrainsMono NF" end
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {

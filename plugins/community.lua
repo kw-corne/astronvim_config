@@ -5,7 +5,7 @@ return {
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
   --
   -- Colorschemes
-  { import = "astrocommunity.colorscheme.catppuccin" },
+  -- { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.colorscheme.everforest" },
   -- { import = "astrocommunity.colorscheme.gruvbox-nvim" },
   -- { import = "astrocommunity.colorscheme.kanagawa-nvim" },
@@ -33,15 +33,16 @@ return {
   -- { import = "astrocommunity.bars-and-lines.bufferline-nvim" },
   -- Language Packs
   -- { import = "astrocommunity.pack.python" },
-  { import = "astrocommunity.pack.rust" },
-  { import = "astrocommunity.pack.bash" },
-  { import = "astrocommunity.pack.java" },
+  -- { import = "astrocommunity.pack.rust" },
+  -- { import = "astrocommunity.pack.lua" },
+  -- { import = "astrocommunity.pack.bash" },
+  -- { import = "astrocommunity.pack.java" },
   -- { import = "astrocommunity.pack.go" },
-  { import = "astrocommunity.pack.svelte" },
-  { import = "astrocommunity.pack.typescript" },
-  { import = "astrocommunity.pack.html-css" },
-  { import = "astrocommunity.pack.cpp" },
-  { import = "astrocommunity.pack.zig" },
+  -- { import = "astrocommunity.pack.svelte" },
+  -- { import = "astrocommunity.pack.typescript" },
+  -- { import = "astrocommunity.pack.html-css" },
+  -- { import = "astrocommunity.pack.cpp" },
+  -- { import = "astrocommunity.pack.zig" },
 
   -- Diagnostics
   { import = "astrocommunity.diagnostics.trouble-nvim" },
@@ -58,6 +59,7 @@ return {
   -- Editing support
   { import = "astrocommunity.editing-support.vim-move" },
   { import = "astrocommunity.editing-support.zen-mode-nvim" },
+  -- { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
 
   -- Markdown-and-latex
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },

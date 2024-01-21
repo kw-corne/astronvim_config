@@ -9,14 +9,60 @@ return {
       { "<leader>T", "<cmd>TodoTelescope<cr>", desc = "Open TODOs in Telescope" },
     },
   },
-  -- {
-  --   "sainnhe/gruvbox-material",
-  --   init = function()
-  --     vim.g.gruvbox_material_background = "hard"
-  --     vim.g.gruvbox_material_foreground = "mix"
-  --     vim.g.gruvbox_material_dim_inactive_windows = 0
-  --   end,
-  -- },
+  {
+    dir = "/home/c/projects/kitty-exec.nvim",
+    opts = {},
+  },
+
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    ---@type CatppuccinOptions
+    opts = {
+      integrations = {
+        alpha = true,
+        aerial = true,
+        dap = true,
+        dap_ui = true,
+        mason = true,
+        neotree = true,
+        notify = true,
+        nvimtree = false,
+        semantic_tokens = true,
+        symbols_outline = true,
+        telescope = true,
+        rainbow_delimiters = true,
+        which_key = true,
+      },
+      color_overrides = {
+        frappe = {
+          base = "#1e1e1e",
+          mantle = "#1e1e1e",
+          crust = "#1e1e1e",
+        },
+      },
+      -- custom_highlights = function(colors) end,
+    },
+  },
+  {
+    "nvim-telescope/telescope.nvim",
+    optional = true,
+    opts = {
+      highlight = {
+        enable = true,
+        additional_vim_regex_highlighting = false,
+      },
+    },
+  },
+  {
+    "sainnhe/gruvbox-material",
+    init = function()
+      vim.g.gruvbox_material_background = "hard"
+      vim.g.gruvbox_material_foreground = "mix"
+      vim.g.gruvbox_material_dim_inactive_windows = 0
+      vim.g.gruvbox_material_float_style = "dim"
+    end,
+  },
   --
   -- {
   --   "EdenEast/nightfox.nvim",
